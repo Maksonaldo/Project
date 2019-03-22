@@ -20,7 +20,7 @@ int main(){
 
 
 	};
-	printf("A B C");
+	//printf("A B C");
 	//while(1){
 	for (i=0; i<8; i++){
 		for (j=0; j<8; j++){
@@ -29,7 +29,7 @@ int main(){
 		printf ("\n");
 	}
 	
-	printf("ABCD");
+	//printf("ABCD");
 	//}
 	return 0;
 }
