@@ -20,6 +20,7 @@ int main(){
 
 
 	};
+	//a
 	//printf("A B C");
 	//while(1){
 	for (i=0; i<8; i++){
