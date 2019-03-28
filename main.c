@@ -32,9 +32,9 @@ void TR(int x1, int y1, int x2, int y2, int x3, int y3, int x4,
   float P = AB + BC + AC; //периметр треугольника
   printf(" P = %f\n", P);
   float pol_P = P / 2; //полупериметр
-printf("%f\n", pol_P);
-	float k=pol_P * (pol_P - AB) * (pol_P - BC) *(pol_P - AC);
-	printf("%f\n", k);
+  printf("%f\n", pol_P);
+  float k = pol_P * (pol_P - AB) * (pol_P - BC) * (pol_P - AC);
+  printf("%f\n", k);
   float H = (2 / AB) * sqrt(k); //высота треугольника
 
   printf("%f\n", H);
@@ -42,14 +42,13 @@ printf("%f\n", pol_P);
   printf("%f\n", S);
 }
 
-int main() {
-  int x1, y1, x2, y2, x3, y3, x4, y4;
+void KR(float x, float y, float R) {
 
-  /*float R, P;   //радиус, периметр
+  float  P;   //радиус, периметр
   float S;      //площадь
-  float x1, y1; //координаты для центра окружности
+  //float x1, y1; //координаты для центра окружности
   printf("Задаем точки центра окружнасти: ");
-  scanf("%f %f", &x1, &y1);
+  scanf("%f %f", &x, &y);
   printf("\n");
   printf("Задаем координаты радиуса окружности: ");
   scanf("%f", &R);
@@ -58,7 +57,14 @@ int main() {
   S = 2 * M_PI * R * R;
   printf("Площадь = %f\n", S);
   P = 2 * M_PI * R;
-  printf("Периметр: %f\n", P);*/
+  printf("Периметр: %f\n", P);
+}
+
+int main() {
+  int x1, y1, x2, y2, x3, y3, x4, y4;
+  float x, y, R;
+
+  KR(x, y, R);
   TR(x1, y1, x2, y2, x3, y3, x4, y4);
 }
 
